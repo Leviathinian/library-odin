@@ -1,1 +1,2 @@
 # library-odin
+This is a Library application created as specificed by the Odin project. It is a site which displays a library of books as a list, showing the title, author, page count, and whether or not the book has been read. Books can be added and removed, and the "have read" status can be toggled.

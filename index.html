@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="style.css"></style>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="library.js" defer></script>
+
+    <h2>Book Info</h2>
+    <table id="bookTable">
+        <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Have Read?</th>
+        </tr>
+    </table>
+    <button onclick="showForm()" style="margin-top:10px">New Book</button>
+    <div id="formContainer" style="display:none; margin-top:10px;">
+        <input type="text" id="titleInput" placeholder="Title">
+        <input type="text" id="authorInput" placeholder="Author">
+        <input type="number" id="pagesInput" placeholder="Pages">
+        <input type="checkbox" id="readInput">
+        Read
+        <button onclick="addBookToLibrary()">Submit</button>
+    </div>
+
+</body>
+</html>
